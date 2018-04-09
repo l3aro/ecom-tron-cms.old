@@ -10,6 +10,7 @@ body {
 body li {
     list-style: none;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -55,10 +56,16 @@ ul {
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
-.connect{
+
+.connect {
     cursor: pointer;
 }
-.ui-state-highlight { height: 50px; line-height: 50px; background: rgb(231, 231, 231); }
+
+.ui-state-highlight {
+    height: 50px;
+    line-height: 50px;
+    background: rgb(231, 231, 231);
+}
 
 input.checkbox-toggle {
     height: 0;
@@ -106,7 +113,7 @@ label.label-checkbox:active:after {
     position: fixed;
     width: 100%;
     height: 50px;
-    background: #1a1a1a;
+    background: #3d4454;
     z-index: 999;
     color: #fff;
 }
@@ -152,7 +159,7 @@ label.label-checkbox:active:after {
     min-width: 270px;
     max-width: 270px;
     top: 50px;
-    background: #1a1a1a;
+    background: #3d4454;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -179,7 +186,7 @@ label.label-checkbox:active:after {
     color: #eaeaea;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid #7563f0;
 }
 
 #sidebar .has-child li {
@@ -199,7 +206,7 @@ label.label-checkbox:active:after {
 }
 
 #sidebar li.active a {
-    color: #1a1a1a;
+    color: #3d4454;
 }
 
 .save-group-buttons {
@@ -221,7 +228,6 @@ label.label-checkbox:active:after {
     width: 100%;
 }
 
-
 .showbox {
     position: absolute;
     top: 0;
@@ -229,25 +235,26 @@ label.label-checkbox:active:after {
     left: 0;
     right: 0;
     padding: 30vh 5%;
-  }
-  
-  .loader {
+}
+
+.loader {
     position: relative;
     margin: 0 auto;
     width: 100px;
-  }
-  .loader:before {
+}
+
+.loader:before {
     content: '';
     display: block;
     padding-top: 100%;
-  }
-  
-  .circular {
+}
+
+.circular {
     -webkit-animation: rotate 2s linear infinite;
-            animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
     height: 100%;
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     width: 100%;
     position: absolute;
     top: 0;
@@ -255,87 +262,90 @@ label.label-checkbox:active:after {
     left: 0;
     right: 0;
     margin: auto;
-  }
-  
-  .path {
+}
+
+.path {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
     -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
     stroke-linecap: round;
-  }
-  
-  @-webkit-keyframes rotate {
+}
+
+@-webkit-keyframes rotate {
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @-webkit-keyframes dash {
+}
+
+@-webkit-keyframes dash {
     0% {
-      stroke-dasharray: 1, 200;
-      stroke-dashoffset: 0;
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
     }
     50% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -35px;
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
     }
     100% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -124px;
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
     }
-  }
-  @keyframes dash {
+}
+
+@keyframes dash {
     0% {
-      stroke-dasharray: 1, 200;
-      stroke-dashoffset: 0;
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
     }
     50% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -35px;
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
     }
     100% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -124px;
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
     }
-  }
-  @-webkit-keyframes color {
+}
+
+@-webkit-keyframes color {
     100%,
     0% {
-      stroke: #d62d20;
+        stroke: #d62d20;
     }
     40% {
-      stroke: #0057e7;
+        stroke: #0057e7;
     }
     66% {
-      stroke: #008744;
+        stroke: #008744;
     }
     80%,
     90% {
-      stroke: #ffa700;
+        stroke: #ffa700;
     }
-  }
-  @keyframes color {
+}
+
+@keyframes color {
     100%,
     0% {
-      stroke: #d62d20;
+        stroke: #d62d20;
     }
     40% {
-      stroke: #0057e7;
+        stroke: #0057e7;
     }
     66% {
-      stroke: #008744;
+        stroke: #008744;
     }
     80%,
     90% {
-      stroke: #ffa700;
+        stroke: #ffa700;
     }
-  }
-  
+}
