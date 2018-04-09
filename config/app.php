@@ -182,6 +182,11 @@ return [
          */
         Facuz\Theme\ThemeServiceProvider::class, 
 
+        /*
+         * Security
+         */
+        Zizaco\Entrust\EntrustServiceProvider::class, 
+
     ],
 
     /*
@@ -231,6 +236,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Theme' => Facuz\Theme\Facades\Theme::class,
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
