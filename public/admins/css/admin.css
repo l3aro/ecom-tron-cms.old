@@ -1,0 +1,341 @@
+html {
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+body {
+    color: #7f8183;
+}
+
+body li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: middle;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.connect{
+    cursor: pointer;
+}
+.ui-state-highlight { height: 50px; line-height: 50px; background: rgb(231, 231, 231); }
+
+input.checkbox-toggle {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label.label-checkbox {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label.label-checkbox:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input.checkbox-toggle:checked+label.label-checkbox {
+    background: #5183e7;
+}
+
+input.checkbox-toggle:checked+label.label-checkbox:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label.label-checkbox:active:after {
+    width: 28px;
+}
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #1a1a1a;
+    z-index: 999;
+    color: #fff;
+}
+
+.top-bar>a {
+    color: #eaeaea;
+}
+
+.top-bar .logo-top-bar {
+    height: 50px;
+    padding: 9px 13px;
+}
+
+.top-bar .logo-top-bar img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.top-bar .right-top-bar {
+    width: calc(100% - 301px);
+    padding: 3px 0;
+}
+
+.main-content {
+    position: fixed;
+    width: calc(100% - 270px);
+    height: calc(100vh - 70px);
+    overflow: auto;
+    left: 270px;
+    top: 70px;
+    padding-bottom: 50px;
+}
+
+#content {
+    width: 100%;
+    padding: 30px 20px 50px 20px;
+    margin-bottom: 50px;
+}
+
+#sidebar {
+    position: fixed;
+    height: calc(100% - 50px);
+    min-width: 270px;
+    max-width: 270px;
+    top: 50px;
+    background: #1a1a1a;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav-link[data-toggle].collapsed:after {
+    content: "▾";
+}
+
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: "▴";
+}
+
+#sidebar ul.left-menu {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#sidebar ul li {
+    width: 100%;
+    font-size: 14px !important;
+}
+
+#sidebar ul li a {
+    color: #eaeaea;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #313131;
+}
+
+#sidebar .has-child li {
+    background: #2f2f2f;
+}
+
+#sidebar .has-child li a {
+    padding-left: 25px;
+}
+
+#sidebar li.active {
+    background: #fff;
+}
+
+#sidebar div.collapse li.active {
+    background: #fff;
+}
+
+#sidebar li.active a {
+    color: #1a1a1a;
+}
+
+.save-group-buttons {
+    position: fixed;
+    right: 20px;
+    top: 70px;
+    z-index: 999;
+}
+
+#table_content_wrapper .row {
+    margin: 0;
+}
+
+#table_content_wrapper .row input.form-control {
+    margin-left: 10px;
+}
+
+#delform {
+    width: 100%;
+}
+
+
+.showbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30vh 5%;
+  }
+  
+  .loader {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+  }
+  .loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .circular {
+    -webkit-animation: rotate 2s linear infinite;
+            animation: rotate 2s linear infinite;
+    height: 100%;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+  
+  @-webkit-keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  @-webkit-keyframes color {
+    100%,
+    0% {
+      stroke: #d62d20;
+    }
+    40% {
+      stroke: #0057e7;
+    }
+    66% {
+      stroke: #008744;
+    }
+    80%,
+    90% {
+      stroke: #ffa700;
+    }
+  }
+  @keyframes color {
+    100%,
+    0% {
+      stroke: #d62d20;
+    }
+    40% {
+      stroke: #0057e7;
+    }
+    66% {
+      stroke: #008744;
+    }
+    80%,
+    90% {
+      stroke: #ffa700;
+    }
+  }
+  
