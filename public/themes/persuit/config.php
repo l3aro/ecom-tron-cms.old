@@ -32,33 +32,60 @@ return array(
 
 		'before' => function($theme)
 		{
-			$theme->setTitle('Title example');
-			$theme->setAuthor('Jonh Doe');
+			$theme->setTitle('Persuit');
+			$theme->setAuthor('Blackheart');
 		},
 
 		'asset' => function($asset)
 		{
 			$asset->themePath()->add([
-										['style', 'css/style.css'],
-										['script', 'js/script.js']
-									 ]);
-
-			// You may use elixir to concat styles and scripts.
-			/*
-			$asset->themePath()->add([
-										['styles', 'dist/css/styles.css'],
-										['scripts', 'dist/js/scripts.js']
-									 ]);
-			*/
-
-			// Or you may use this event to set up your assets.
-			/*
-			$asset->themePath()->add('core', 'core.js');			
-			$asset->add([
-							['jquery', 'vendor/jquery/jquery.min.js'],
-							['jquery-ui', 'vendor/jqueryui/jquery-ui.min.js', ['jquery']]
-						]);
-			*/
+			// CSS
+				// Icon css link
+				['font-awesome', 'css/font-awesome.min.css'],
+				['line-icon', 'vendors/line-icon/css/simple-line-icons.css'],
+				['elegant-icon', 'vendors/elegant-icon/style.css'],
+				// Bootstrap
+				['bootstrap', 'css/bootstrap.min.css'],
+				// Rev slider css 
+				['revolution-settings', 'vendors/revolution/css/settings.css'],
+				['revolution-layers', 'vendors/revolution/css/layers.css'],
+				['revolution-nav', 'vendors/revolution/css/navigation.css'],
+				// Extra plugin css
+				['owl-carousel', 'vendors/owl-carousel/owl.carousel.min.css'],
+				['bootstrap-selector', 'vendors/bootstrap-selector/css/bootstrap-select.min.css'],
+				['jquery-ui', 'vendors/jquery-ui/jquery-ui.css'],
+				// Custom css
+				['style', 'css/style.css'],
+				['responsive', 'css/responsive.css'],										
+			// JS
+				// jQuery (necessary for Bootstrap's JavaScript plugins)
+				['jquery', 'js/jquery-3.2.1.min.js'],
+				// Include all compiled plugins (below), or include individual files as needed
+				['popper', 'js/popper.min.js'],
+				['bootstrap', 'js/bootstrap.min.js'],
+				// Rev slider js
+				['revolution-tools', 'vendors/revolution/js/jquery.themepunch.tools.min.js'],
+				['revolution-themepunch', 'vendors/revolution/js/jquery.themepunch.revolution.min.js'],
+				['revolution-actions', 'vendors/revolution/js/extensions/revolution.extension.actions.min.js'],
+				['revolution-video', 'vendors/revolution/js/extensions/revolution.extension.video.min.js'],
+				['revolution-slideanims', 'vendors/revolution/js/extensions/revolution.extension.slideanims.min.js'],
+				['revolution-layeranimation', 'vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js'],
+				['revolution-navigation', 'vendors/revolution/js/extensions/revolution.extension.navigation.min.js'],
+				// Extra plugin js
+				['counterup-waypoints', 'vendors/counterup/jquery.waypoints.min.js'],
+				['counterup-waypoints', 'vendors/counterup/jquery.counterup.min.js'],
+				['owl-carousel', 'vendors/owl-carousel/owl.carousel.min.js'],
+				['bootstrap-selector', 'vendors/bootstrap-selector/js/bootstrap-select.min.js'],
+				['image-dropdown', 'vendors/image-dropdown/jquery.dd.min.js'],
+				['smoothscroll', 'js/smoothscroll.js'],
+				['imagesloaded', 'vendors/isotope/imagesloaded.pkgd.min.js'],
+				['isotope', 'vendors/isotope/isotope.pkgd.min.js'],
+				['magnify-popup', 'vendors/magnify-popup/jquery.magnific-popup.min.js'],
+				['vertical-slider', 'vendors/vertical-slider/js/jQuery.verticalCarousel.js'],
+				['jquery-ui', 'vendors/jquery-ui/jquery-ui.js'],
+				// Custom js
+				['scripts', 'js/theme.js'],			
+			]);
 		},
 
 

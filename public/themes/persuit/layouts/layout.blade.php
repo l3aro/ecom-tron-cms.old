@@ -14,11 +14,8 @@
     </head>
 
     <body>
-        @partial('header')
 
         @content()
-
-        @partial('footer')
 
         @scripts()
     </body>
