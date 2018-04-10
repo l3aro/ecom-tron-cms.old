@@ -8,7 +8,7 @@
         <meta name="description" content="@get('description')">
         <meta name="author" content="@get('author')">
     
-        <title>@get('title')</title>
+        <title>Persuit - @get('title')</title>
 
         @styles()
         

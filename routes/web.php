@@ -11,8 +11,76 @@
 |
 */
 
-Route::get('/', function () {
-    return Theme::view('index');
+/**
+ * Frontend Zone
+ */
+Route::group([
+    'namespace' => 'Frontend'
+], function() {
+    Route::get('/', [
+        'as' => 'frontend.homepage',
+        'uses' => 'HomeController@show'
+    ]);
+
+    /**
+     * Contact routes
+     */
+    Route::group([
+        'prefix' => 'contact'
+    ], function() {
+        Route::get('/', [
+            'as' => 'frontend.contact.show',
+            'uses' => 'ContactController@show'
+        ]);
+    });
+
+    /**
+     * Login routes
+     */
+    Route::group([
+        'prefix' => 'login'
+    ], function() {
+        Route::get('/', [
+            'as' => 'frontend.login.show',
+            'uses' => 'LoginController@show'
+        ]);
+    });
+
+    /**
+     * Order routes
+     */
+    Route::group([
+        'prefix' => 'cart'
+    ], function() {
+        Route::get('/', [
+            'as' => 'frontend.order.show',
+            'uses' => 'OrderController@show'
+        ]);
+    });
+
+    /**
+     * Product Category routes
+     */
+    Route::group([
+        'prefix' => 'product-cat'
+    ], function() {
+        Route::get('/', [
+            'as' => 'frontend.product-cat.show',
+            'uses' => 'ProductCatController@show'
+        ]);
+    });
+
+    /**
+     * Product routes
+     */
+    Route::group([
+        'prefix' => 'product'
+    ], function() {
+        Route::get('/', [
+            'as' => 'frontend.product.show',
+            'uses' => 'ProductController@show'
+        ]);
+    });
 });
 
 

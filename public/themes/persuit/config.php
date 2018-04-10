@@ -32,7 +32,6 @@ return array(
 
 		'before' => function($theme)
 		{
-			$theme->setTitle('Persuit');
 			$theme->setAuthor('Blackheart');
 		},
 
