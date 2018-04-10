@@ -1,5 +1,6 @@
 <!--================Menu Area =================-->
-<header class="shop_header_area">
+<header class="shop_header_area fixed_tb_menu carousel_menu_area">
+    <div class="carousel_menu_inner">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img src="@asset('img/logo.png')" alt=""></a>
@@ -8,16 +9,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav categories">
-                    <li class="nav-item">
-                        <select class="selectpicker">
-                            <option>Categories</option>
-                            <option>Categories 2</option>
-                            <option>Categories 3</option>
-                        </select>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
+                    <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown submenu active">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Home <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -67,8 +59,14 @@
                     <li class="nav-item"><a class="nav-link" href="#">lookbook</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="search_icon"><a href="#"><i class="icon-magnifier icons"></i></a></li>
+                        <li class="user_icon"><a href="#"><i class="icon-user icons"></i></a></li>
+                        <li class="cart_cart"><a href="#"><i class="icon-handbag icons"></i></a></li>
+                    </ul>
             </div>
         </nav>
+    </div>
     </div>
 </header>
 <!--================End Menu Area =================-->
