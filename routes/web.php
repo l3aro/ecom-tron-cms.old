@@ -65,7 +65,7 @@ Route::group([
         'prefix' => 'product-cat'
     ], function() {
         Route::get('/', [
-            'as' => 'frontend.product-cat.show',
+            'as' => 'frontend.productcat.show',
             'uses' => 'ProductCatController@show'
         ]);
     });
