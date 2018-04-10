@@ -98,6 +98,16 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+
+        // Admin password broker
+        'admins' => [
+            //user provider for admin
+            'provider' => 'users',
+            //table to store password reset tokens for admin
+            'table' => 'admin_password_resets',
+            //expire time for these tokens in minutes
+            'expire' => 60,
+        ],
     ],
 
 ];

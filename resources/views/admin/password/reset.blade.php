@@ -20,10 +20,10 @@
 <body>
     <section class="content-center">
         <div class="card">
-            <form class="form-signin" role="form" action="{{ route('admin.change_password') }}" method="post">
+            <form class="form-signin" role="form" action="{{ route('admin.resetpass.reset') }}" method="post">
                 {{ csrf_field() }}
                 <div class="row">
-                    <div class="col-md-3"><div class="text-center logo"><img src="{{ URL::asset('admins/images/logo.png') }}" width="80"></div></div>
+                    <div class="col-md-3"><div class="text-center logo"><img src="{{ URL::asset('admins/images/logo.jpg') }}" width="80"></div></div>
                     <div class="col-md-9"><h3><br><br>ADMIN RESET PASSWORD</h3></div>
                 </div>
                 @if($errors->has('password') != null)

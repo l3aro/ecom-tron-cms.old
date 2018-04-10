@@ -45,7 +45,7 @@
                 <span class="input-group-addon" id="basic-addon3"><span class="oi oi-lock-locked" title="icon name" aria-hidden="true"></span></span>
             </div>
             <br>
-            <div class="text-right"><a href="reset-password">Quên mật khẩu?</a></div>
+            <div class="text-right"><a href="{{ route('admin.resetpass.showLinkRequestForm') }}">Quên mật khẩu?</a></div>
             <br>
             <button class="btn btn-success btn-block" type="submit">Đăng nhập</button>
             <br>

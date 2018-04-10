@@ -26,6 +26,8 @@ Route::group([
     'namespace' => 'Admin',
     'prefix' => 'admin'
 ], function() {
+
+    // Authenticate routes
     Route::get('login', [
         'as' => 'admin.login.showLoginForm',
         'uses' => 'LoginController@showLoginForm',
@@ -38,7 +40,24 @@ Route::group([
         'as' => 'admin.logout',
         'uses' => 'LoginController@logout'
     ]);
-    
+
+    // Password reset routes
+    Route::get('reset', [
+        'as' => 'admin.resetpass.showLinkRequestForm',
+        'uses' => 'ForgotPasswordController@showLinkRequestForm'
+    ]);
+    Route::post('email', [
+        'as' => 'admin.resetpass.sendResetLinkEmail',
+        'uses' => 'ForgotPasswordController@sendResetLinkEmail'
+    ]);
+    Route::get('reset/{token}', [
+        'as' => 'admin.resetpass.showResetForm',
+        'uses' => 'ResetPasswordController@showResetForm'
+    ]);
+    Route::post('reset', [
+        'as' => 'admin.resetpass.reset',
+        'uses' => 'ResetPasswordController@reset'
+    ]);
     
     /**
      * Authenticated and have role only
