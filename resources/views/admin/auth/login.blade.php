@@ -23,7 +23,7 @@
         <form class="form-signin" role="form" action="{{ url('/login') }}" method="post">
         {{ csrf_field() }}
             <div class="row">
-            <div class="col-md-3"><div class="text-center logo"><img src="{{ URL::asset('admins/images/logo.png') }}" width="120"></div></div>
+            <div class="col-md-3"><div class="text-center logo"><img src="{{ URL::asset('admins/images/logo.jpg') }}" width="120"></div></div>
             <div class="col-md-9"><h1><br><br>ADMIN PANEL LOGIN</h1></div>
         </div>
         @if($errors->has('email'))
