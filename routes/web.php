@@ -12,12 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Theme::view('index');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 /**
  * Admin Zone
