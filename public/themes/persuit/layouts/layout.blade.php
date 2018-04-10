@@ -3,6 +3,7 @@
 
     <head>
         {!! meta_init() !!}
+        <link rel="icon" href="@asset('img/fav-icon.png')" type="image/x-icon" />
         <meta name="keywords" content="@get('keywords')">
         <meta name="description" content="@get('description')">
         <meta name="author" content="@get('author')">
